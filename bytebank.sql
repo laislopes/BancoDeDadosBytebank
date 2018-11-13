@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: 13-Nov-2018 às 02:09
+-- Generation Time: 13-Nov-2018 às 02:49
 -- Versão do servidor: 5.7.23
 -- versão do PHP: 7.2.10
 
@@ -41,7 +41,14 @@ CREATE TABLE IF NOT EXISTS `clientes` (
   `Email` varchar(100) COLLATE latin1_general_ci NOT NULL,
   `DataDoCadastro` datetime NOT NULL,
   PRIMARY KEY (`ClienteID`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
+
+--
+-- Extraindo dados da tabela `clientes`
+--
+
+INSERT INTO `clientes` (`ClienteID`, `Endereco`, `Numero`, `Cidade`, `Bairro`, `Estado`, `CEP`, `Telefone`, `Email`, `DataDoCadastro`) VALUES
+(1, 'regergerg', 787, 'fhfhfh', 'hfhfhfhfhf', 'dfg', '34.534-534', '(34) 5345-3453', 'hkjkhkhh@hkhkhh', '2018-11-13 00:39:11');
 
 -- --------------------------------------------------------
 
