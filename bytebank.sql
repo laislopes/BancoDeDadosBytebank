@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: 16-Nov-2018 às 02:35
+-- Generation Time: 18-Nov-2018 às 19:57
 -- Versão do servidor: 5.7.23
 -- versão do PHP: 7.2.10
 
@@ -41,14 +41,22 @@ CREATE TABLE IF NOT EXISTS `clientes` (
   `Email` varchar(100) COLLATE latin1_general_ci NOT NULL,
   `DataDoCadastro` datetime NOT NULL,
   PRIMARY KEY (`ClienteID`)
-) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=23 DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
 
 --
 -- Extraindo dados da tabela `clientes`
 --
 
 INSERT INTO `clientes` (`ClienteID`, `Endereco`, `Numero`, `Cidade`, `Bairro`, `Estado`, `CEP`, `Telefone`, `Email`, `DataDoCadastro`) VALUES
-(1, 'regergerg', 787, 'fhfhfh', 'hfhfhfhfhf', 'dfg', '34.534-534', '(34) 5345-3453', 'hkjkhkhh@hkhkhh', '2018-11-13 00:39:11');
+(13, 'refjudosdfio', 78, 'sdjhksjdh', 'asjdhsjkf', 'so', '90.328-529', '(87) 5443-4534', 'dsjskjd', '2018-11-17 15:47:20'),
+(10, 'Rua dos Melros', 83, 'Hortolândia', 'Chácara Recreio Alvorada', 'SP', '13.183-761', '(19) 3887-5307', 'daniel@hotmail.com', '2018-11-17 14:57:25'),
+(15, 'Rua dos Melros', 83, 'Hortolândia', 'Chácara Recreio Alvorada', 'SP', '13.183-761', '(19) 3887-5307', 'daniel@hotmail.com', '2018-11-17 16:27:34'),
+(11, 'Rua dos Melros', 83, 'Hortolândia', 'Chácara Recreio Alvorada', 'SP', '13.183-761', '(19) 3887-5307', 'daniel@hotmail.com', '2018-11-17 15:23:17'),
+(14, 'Rua dos Melros', 83, 'Hortolândia', 'Chácara Recreio Alvorada', 'SP', '13.183-761', '(19) 3887-5307', 'daniel@hotmail.com', '2018-11-17 16:18:54'),
+(16, 'Rua dos Melros', 83, 'Hortolândia', 'Chácara Recreio Alvorada', 'SP', '13.183-761', '(19) 3887-5307', 'daniel@hotmail.com', '2018-11-17 16:28:19'),
+(17, 'Rua dos Melros', 83, 'Hortolândia', 'Chácara Recreio Alvorada', 'SP', '13.183-761', '(19) 3887-5307', 'daniel@hotmail.com', '2018-11-17 16:28:48'),
+(18, 'Rua dos Melros', 83, 'Hortolândia', 'Chácara Recreio Alvorada', 'SP', '13.183-761', '(19) 3887-5307', 'daniel@hotmail.com', '2018-11-17 16:29:15'),
+(20, 'asdas', 23, 'asd', 'asd', 'we', '22.222-222', '(66) 6666-6666', 'asdasd.com', '2018-11-17 17:10:08');
 
 -- --------------------------------------------------------
 
@@ -71,7 +79,13 @@ CREATE TABLE IF NOT EXISTS `pessoasfisicas` (
 --
 
 INSERT INTO `pessoasfisicas` (`ClienteID`, `Nome`, `CPF`, `Celular`, `Sexo`) VALUES
-(0, 'Lais', '345345345', '787977897897', 0x31);
+(11, 'A', '415.609.358-12', '(19) 98326-8980', 0x30),
+(14, 'B', '315.609.358-12', '(19) 98326-8980', 0x30),
+(13, 'C', '313.354.646-64', '(34) 89435-8934', 0x30),
+(15, 'D', '215.609.358-12', '(19) 98326-8980', 0x31),
+(16, 'E', '115.609.358-12', '(19) 98326-8980', 0x30),
+(17, 'F', '015.609.358-12', '(19) 98326-8980', 0x31),
+(18, 'Gup', '615.609.358-12', '(19) 98326-8980', 0x31);
 
 -- --------------------------------------------------------
 
@@ -89,6 +103,13 @@ CREATE TABLE IF NOT EXISTS `pessoasjuridicas` (
   `Site` varchar(100) COLLATE latin1_general_ci NOT NULL,
   PRIMARY KEY (`ClienteID`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
+
+--
+-- Extraindo dados da tabela `pessoasjuridicas`
+--
+
+INSERT INTO `pessoasjuridicas` (`ClienteID`, `RazaoSocial`, `CNPJ`, `NomeFantasia`, `InscricaoEstadual`, `Site`) VALUES
+(20, 'CTDIup123', '222.222.222-22', 'CTDIup', '22.222.2222-22', '');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
